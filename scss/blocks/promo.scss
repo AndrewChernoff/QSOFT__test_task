@@ -1,0 +1,30 @@
+.promo {
+    margin: 70px 0 0 0;
+    min-height: 820px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    &__header {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    &__partners {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    &__partner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 120px;
+        cursor: pointer;
+        border: 1px solid #EBEBF1;
+    }
+}
