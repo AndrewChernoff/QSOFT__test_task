@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+.container {
+    max-width: 728px;
+}
+
+.header {
+    &__search {
+        width: 395px;
+        input {
+            width: 344px;
+        }
+    }
+
+    &__user {
+        width: 129px;
+        height: 40px;
+    }
+}
+
+.promo {
+    min-height: 944px;
+    &__header {
+        font-size: 28px;
+    }
+    &__partners {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    &__partner {
+        width: 227px;
+        height: 120px;
+        img {
+            max-width: 90% ;
+        }
+    }
+}
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 330px;
+    }
+
+    .header {
+        padding-bottom: 0;
+        &__user {
+            display: none;
+            &-hidden {
+                display: block;
+            }
+        }
+        &__info {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__search {
+            display: none;
+            width: 350px;
+            margin-left: -10px;
+            input {
+                display: block;
+                position: relative;
+                width: 300px;
+                border: none;
+                border-top: #BBC4D6 1px solid;
+            }
+        }
+        &__search-hidden {
+            display: block;
+            width: 375px;
+            margin-top: 22px;
+            margin-left: -21px;
+            input {
+                display: block;
+                position: relative;
+                width: 327px;
+                border: none;
+                border-top: #BBC4D6 1px solid;
+            }
+        }
+        
+    }
+
+    .promo {
+        margin-top: 0;
+        padding: 70px 0 73px 0;
+        &__partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        &__partner {
+            width: 335px;
+            height: 140px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

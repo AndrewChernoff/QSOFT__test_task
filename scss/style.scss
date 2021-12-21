@@ -1,0 +1,111 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.header {
+    padding: 20px 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        height: 100%;
+        max-width: 100%;
+    }
+    &__search {
+        background: white;
+        position: relative;
+        width: 763px;
+        input {
+            display: block;
+            padding: 12px 0 12px 48px;
+            width: 715px;
+        }
+          button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 14px;
+            z-index: 2;
+          }
+      }
+      &__search-hidden {
+        display: none;
+        background: white;
+        position: relative;
+        width: 763px;
+        input {
+            display: block;
+            padding: 12px 0 12px 48px;
+            width: 715px;
+        }
+          button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 14px;
+            z-index: 2;
+          }
+    }
+      &__user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 130px;
+          line-height: 10px;
+          &-name {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 14px;
+          }
+        &-hidden {
+            display: none;
+        }
+      }
+}
+
+.promo {
+    margin: 70px 0 0 0;
+    min-height: 820px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    &__header {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    &__partners {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    &__partner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 268px;
+        height: 120px;
+        cursor: pointer;
+        border: 1px solid #EBEBF1;
+    }
+}
+
+@import 'media.scss';
